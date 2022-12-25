@@ -1,0 +1,25 @@
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student("ФКН", 3, 3, "Кирилл", "Иванов");
+        Dean dean = new Dean("Андрей", "Крыловецкий", "aakryl@cs.vsu.ru", "+7 952-958-6639", "Декан");
+        Professor professor = new Professor("Сергей", "Власов", "", "", "Старший преподаватель");
+
+        System.out.print("Студент: ");
+        System.out.println(student);
+        System.out.print("Преподаватель: ");
+        System.out.println(professor);
+        System.out.print("Декан ");
+        System.out.println(dean);
+        System.out.println("изменение факультета преподавателя");
+        professor.setFacultyName("ФКН");
+        System.out.println("изменение факультета декана");
+        dean.setFacultyName("ПММ");
+        System.out.print("Студент: ");
+        System.out.println(student);
+        System.out.print("Преподаватель: ");
+        System.out.println(professor);
+        System.out.print("Декан ");
+        System.out.println(dean);
+
+    }
+}
